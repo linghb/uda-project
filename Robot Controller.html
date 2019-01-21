@@ -13163,9 +13163,22 @@ div#notebook {
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr>
+<p><strong>任务1：</strong>在如下代码中，请写代码获得这些值：</p>
+<ol>
+<li>模拟环境的长和宽</li>
+<li>模拟环境中第3行第6列元素</li>
+</ol>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">helper</span>
@@ -13187,7 +13200,7 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>maze-id 1-1547652288
+<pre>maze-id 1-1548088902
 [[3, 2, 2, 2, 2, 2, 2, 2, 1],
  [0, 0, 2, 2, 2, 2, 2, 0, 0],
  [2, 0, 0, 2, 2, 2, 0, 0, 2],
@@ -13201,22 +13214,9 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-<p><strong>任务1：</strong>在如下代码中，请写代码获得这些值：</p>
-<ol>
-<li>模拟环境的长和宽</li>
-<li>模拟环境中第3行第6列元素</li>
-</ol>
-
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#TODO 1模拟环境的行数</span>
@@ -13268,6 +13268,54 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
+<div class="prompt input_prompt">In&nbsp;[134]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">run</span> -i -e test.py RobotControllortTestCase.test_cal_barriers
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>.
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+OK
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr>
+<p><strong>任务3：</strong>在如下代码中：</p>
+<ol>
+<li>创建一个名为 <code>loc_map</code> 的字典，它有两个键值，分别为 <code>start</code> 和 <code>destination</code>，对应的值分别为起点和目标点的坐标，它们以如 <code>(0,0)</code> 的形式保存为元组。</li>
+<li>从字典中取出 <code>start</code> 对应的值，保存在 <code>robot_current_loc</code> 对应的变量中，这个变量表示小车现在的位置。</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
@@ -13308,54 +13356,6 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">run</span> -i -e test.py RobotControllortTestCase.test_cal_barriers
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>.
-----------------------------------------------------------------------
-Ran 1 test in 0.003s
-
-OK
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-<p><strong>任务3：</strong>在如下代码中：</p>
-<ol>
-<li>创建一个名为 <code>loc_map</code> 的字典，它有两个键值，分别为 <code>start</code> 和 <code>destination</code>，对应的值分别为起点和目标点的坐标，它们以如 <code>(0,0)</code> 的形式保存为元组。</li>
-<li>从字典中取出 <code>start</code> 对应的值，保存在 <code>robot_current_loc</code> 对应的变量中，这个变量表示小车现在的位置。</li>
-</ol>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
-<div class="inner_cell">
-    <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">loc_map</span> <span class="o">=</span> <span class="p">{}</span> <span class="c1">#TODO 6按照上述要求创建字典</span>
 <span class="n">rows</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">env_data</span><span class="p">)</span>
 <span class="n">columns</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">env_data</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
@@ -13377,7 +13377,7 @@ OK
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[137]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">run</span> -i -e test.py RobotControllortTestCase.test_cal_loc_map
@@ -13399,7 +13399,7 @@ OK
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>.
 ----------------------------------------------------------------------
-Ran 1 test in 0.003s
+Ran 1 test in 0.001s
 
 OK
 </pre>
@@ -13435,7 +13435,7 @@ OK
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">is_move_valid_special</span><span class="p">(</span><span class="n">loc</span><span class="p">,</span> <span class="n">act</span><span class="p">):</span>
@@ -13470,7 +13470,7 @@ OK
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[139]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">run</span> -i -e test.py RobotControllortTestCase.test_is_move_valid_special
@@ -13492,7 +13492,7 @@ OK
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>.
 ----------------------------------------------------------------------
-Ran 1 test in 0.001s
+Ran 1 test in 0.010s
 
 OK
 </pre>
@@ -13514,7 +13514,7 @@ OK
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">is_move_valid</span><span class="p">(</span><span class="n">env_data</span><span class="p">,</span> <span class="n">loc</span><span class="p">,</span> <span class="n">act</span><span class="p">):</span>
@@ -13619,7 +13619,7 @@ OK
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## TODO 10 从头定义、实现你的函数</span>
@@ -13635,7 +13635,7 @@ OK
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">run</span> -i -e test.py RobotControllortTestCase.test_valid_actions
@@ -13680,7 +13680,7 @@ OK
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">##TODO 11 从头定义、实现你的函数</span>
@@ -13694,6 +13694,8 @@ OK
         <span class="k">return</span> <span class="p">(</span><span class="n">loc</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
     <span class="k">elif</span> <span class="p">(</span><span class="n">act</span> <span class="o">==</span> <span class="s1">&#39;r&#39;</span> <span class="ow">and</span> <span class="n">is_move_valid</span><span class="p">(</span><span class="n">env_data</span><span class="p">,</span> <span class="n">loc</span><span class="p">,</span> <span class="n">act</span><span class="p">)):</span>
         <span class="k">return</span> <span class="p">(</span><span class="n">loc</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13703,7 +13705,7 @@ OK
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">run</span> -i -e test.py RobotControllortTestCase.test_move_robot
@@ -13725,7 +13727,7 @@ OK
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>.
 ----------------------------------------------------------------------
-Ran 1 test in 0.002s
+Ran 1 test in 0.001s
 
 OK
 </pre>
@@ -13755,7 +13757,7 @@ OK
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[95]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">##TODO 12 从头实现你的函数</span>
@@ -13778,7 +13780,7 @@ OK
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[96]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 运行</span>
@@ -13799,7 +13801,7 @@ OK
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>在第197个回合找到宝藏！
+<pre>在第69个回合找到宝藏！
 </pre>
 </div>
 </div>
@@ -13836,29 +13838,167 @@ OK
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[99]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">##TODO 13 实现你的算法</span>
 <span class="c1">#算法一、深度优先遍历方法</span>
-<span class="k">def</span> <span class="nf">init_node_conns</span><span class="p">(</span><span class="n">node_conns</span><span class="p">):</span>
-    <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">    for row in range(0, rows):</span>
-<span class="sd">        if (row not in node_conns.keys()):</span>
-<span class="sd">            node_conns[row] = []</span>
-<span class="sd">        for col in range(0, columns):</span>
-<span class="sd">            if (env_data[row][col] != 2 and col not in node_conns[row]):</span>
-<span class="sd">                node_conns[row].append(col)</span>
-<span class="sd">    print(&#39;conns:&#39;, node_conns) #debug代码，打印初始化后conns值</span>
-<span class="sd">    &#39;&#39;&#39;</span>
-    
+<span class="n">robot_dest_loc</span> <span class="o">=</span> <span class="n">loc_map</span><span class="p">[</span><span class="s1">&#39;destination&#39;</span><span class="p">]</span>
+<span class="k">def</span>  <span class="nf">getNextValidLoc</span><span class="p">(</span><span class="n">loc</span><span class="p">,</span> <span class="n">visited</span><span class="p">):</span>
+    <span class="n">next_loc</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+    <span class="c1">#获取器人在这个位置所有的可行动作</span>
+    <span class="n">acts</span> <span class="o">=</span> <span class="n">valid_actions</span><span class="p">(</span><span class="n">env_data</span><span class="p">,</span> <span class="n">loc</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">act</span> <span class="ow">in</span> <span class="n">acts</span><span class="p">:</span>
+        <span class="n">next_loc</span> <span class="o">=</span> <span class="n">move_robot</span><span class="p">(</span><span class="n">loc</span><span class="p">,</span> <span class="n">act</span><span class="p">)</span>  
+        <span class="k">if</span> <span class="p">(</span><span class="n">next_loc</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">visited</span><span class="o">.</span><span class="n">keys</span><span class="p">()):</span>
+            <span class="k">return</span> <span class="n">next_loc</span> 
+    <span class="k">return</span> <span class="n">next_loc</span>
+
 <span class="k">def</span> <span class="nf">dfs_method</span><span class="p">():</span>
-    <span class="n">node_conns</span> <span class="o">=</span><span class="p">{}</span> <span class="c1">#1、定义一个连通节点图字典</span>
-    <span class="n">visited</span> <span class="o">=</span> <span class="p">{}</span> <span class="c1">#2、定义一个节点访问过的字典</span>
-    <span class="n">init_node_conns</span><span class="p">(</span><span class="n">node_conns</span><span class="p">)</span><span class="c1">#3、构建连通节点图</span>
-    <span class="n">order</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1">#4、定义一个dfs遍历的列表</span>
-    <span class="k">def</span> <span class="nf">dsf</span><span class="p">(</span><span class="n">node</span><span class="p">):</span>
+    <span class="n">visited</span> <span class="o">=</span> <span class="p">{}</span> <span class="c1">#定义一个节点访问过的字典</span>
+    <span class="n">order</span> <span class="o">=</span> <span class="p">[</span><span class="n">robot_current_loc</span><span class="p">]</span>
+    <span class="n">visited</span><span class="p">[</span><span class="n">robot_current_loc</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="k">while</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">order</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">order</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">!=</span> <span class="n">robot_dest_loc</span><span class="p">):</span>
+        <span class="c1">#print(&#39;len(order):&#39;, len(order), &#39;order:&#39;, order)</span>
+        <span class="n">loc</span> <span class="o">=</span> <span class="n">getNextValidLoc</span><span class="p">(</span><span class="n">order</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">visited</span><span class="p">)</span>
+        <span class="c1">#print(&#39;next_loc:&#39;, loc)</span>
+        <span class="c1">#如果不能到下一个位置</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">loc</span> <span class="o">==</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)):</span> 
+            <span class="n">order</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+            <span class="k">continue</span>
+        <span class="c1">#将此loc位置置为已经访问</span>
+        <span class="n">visited</span><span class="p">[</span><span class="n">loc</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="c1">#添加入列表中</span>
+        <span class="n">order</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">loc</span><span class="p">)</span>
+    <span class="k">for</span> <span class="nb">ord</span> <span class="ow">in</span> <span class="n">order</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;ord:&#39;</span><span class="p">,</span> <span class="nb">ord</span><span class="p">)</span>
+
+<span class="c1">#dfs_method()</span>
+
+<span class="c1">#获取所有与loc节点相连通的节点位置</span>
+<span class="k">def</span>  <span class="nf">getNextValidLocs</span><span class="p">(</span><span class="n">loc</span><span class="p">,</span> <span class="n">visited</span><span class="p">):</span>
+    <span class="n">locs</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="c1">#获取器人在这个位置所有的可行动作</span>
+    <span class="n">acts</span> <span class="o">=</span> <span class="n">valid_actions</span><span class="p">(</span><span class="n">env_data</span><span class="p">,</span> <span class="n">loc</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">act</span> <span class="ow">in</span> <span class="n">acts</span><span class="p">:</span>
+        <span class="n">next_loc</span> <span class="o">=</span> <span class="n">move_robot</span><span class="p">(</span><span class="n">loc</span><span class="p">,</span> <span class="n">act</span><span class="p">)</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">next_loc</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">visited</span><span class="o">.</span><span class="n">keys</span><span class="p">()):</span>
+            <span class="n">locs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">next_loc</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">locs</span>
+
+<span class="c1">#算法二、广度优先遍历方法</span>
+<span class="k">def</span> <span class="nf">bfs_method</span><span class="p">():</span>
+    <span class="n">visited</span> <span class="o">=</span> <span class="p">{}</span> <span class="c1">#定义一个节点访问过的字典</span>
+    <span class="n">que</span> <span class="o">=</span> <span class="p">[</span><span class="n">robot_current_loc</span><span class="p">]</span> <span class="c1">#初始化一个队列，用数组来实现</span>
+    <span class="n">order</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">visited</span><span class="p">[</span><span class="n">robot_current_loc</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="k">while</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">que</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span>  <span class="ow">and</span> <span class="n">que</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">!=</span> <span class="n">robot_dest_loc</span><span class="p">):</span>
+        <span class="n">head_loc</span> <span class="o">=</span> <span class="n">que</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">order</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">head_loc</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">loc</span> <span class="ow">in</span> <span class="n">getNextValidLocs</span><span class="p">(</span><span class="n">head_loc</span><span class="p">,</span> <span class="n">visited</span><span class="p">):</span>
+            <span class="n">visited</span><span class="p">[</span><span class="n">loc</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="n">que</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">loc</span><span class="p">)</span>
         
+    <span class="k">for</span> <span class="nb">ord</span> <span class="ow">in</span> <span class="n">order</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;ord:&#39;</span><span class="p">,</span> <span class="nb">ord</span><span class="p">)</span>
+<span class="c1">#bfs_method()</span>
+
+<span class="c1">#算法三、A*算法</span>
+<span class="c1">#定义一个Node对象，</span>
+<span class="k">class</span> <span class="nc">Node</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">loc</span><span class="p">,</span> <span class="n">parent</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+        <span class="c1">#节点本身位置</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">loc</span> <span class="o">=</span> <span class="n">loc</span>
+        <span class="c1">#预估成本(根据与目标点的曼哈顿距离进行预估)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">estimate</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">robot_dest_loc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">loc</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">+</span> <span class="nb">abs</span><span class="p">(</span><span class="n">robot_dest_loc</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+        <span class="c1">#指向的父节点</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">parent</span> <span class="o">=</span> <span class="n">parent</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">cost</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">cal_cost</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parent</span><span class="p">)</span>
+        <span class="c1">##print(&#39;cost:&#39;, self.cost)</span>
+        
+        
+    <span class="k">def</span> <span class="nf">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">loc</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">loc</span>
+      
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">cal_cost</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parent</span><span class="p">):</span>
+        <span class="c1">#真实路径代价（初始定义：每移动一格代价为10）</span>
+        <span class="n">cost</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">parent</span><span class="p">):</span>
+            <span class="c1">#如果parent不为空，则直接加上parent的cost</span>
+            <span class="c1">##print(&#39;parent cost:&#39;, parent.cost)</span>
+            <span class="n">cost</span> <span class="o">=</span> <span class="n">parent</span><span class="o">.</span><span class="n">cost</span> <span class="o">+</span> <span class="mi">10</span>
+        <span class="k">return</span> <span class="n">cost</span>
+    
+    <span class="k">def</span> <span class="nf">get_final</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1">#最终的路径代价</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">final</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">cost</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">estimate</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">final</span>
+    
+    <span class="k">def</span> <span class="nf">change_parent</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parent</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">parent</span> <span class="o">=</span> <span class="n">parent</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">cost</span> <span class="o">=</span> <span class="n">cal_cost</span><span class="p">(</span><span class="n">parent</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">by_final</span><span class="p">(</span><span class="n">node</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">node</span><span class="o">.</span><span class="n">get_final</span><span class="p">()</span>
+
+<span class="k">def</span> <span class="nf">is_not_contains</span><span class="p">(</span><span class="n">loc</span><span class="p">,</span> <span class="n">nodes</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">nodes</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">loc</span> <span class="o">==</span> <span class="n">node</span><span class="o">.</span><span class="n">loc</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">False</span>
+    <span class="k">return</span> <span class="kc">True</span>
+        
+<span class="c1">#检查所有与它相邻的方格，忽略其中在close_list中或是不可走(unwalkable)的方格</span>
+<span class="c1">#如果方格不在open_list中，则把它们加入到open_list中</span>
+<span class="k">def</span>  <span class="nf">getOpendNodes</span><span class="p">(</span><span class="n">cur_node</span><span class="p">,</span> <span class="n">open_list</span><span class="p">,</span> <span class="n">close_list</span><span class="p">):</span>
+    <span class="c1">#获取器人在这个位置所有的可行动作</span>
+    <span class="n">acts</span> <span class="o">=</span> <span class="n">valid_actions</span><span class="p">(</span><span class="n">env_data</span><span class="p">,</span> <span class="n">cur_node</span><span class="o">.</span><span class="n">loc</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">act</span> <span class="ow">in</span> <span class="n">acts</span><span class="p">:</span>
+        <span class="c1">#下一个可移动坐标点loc</span>
+        <span class="n">next_loc</span> <span class="o">=</span> <span class="n">move_robot</span><span class="p">(</span><span class="n">cur_node</span><span class="o">.</span><span class="n">loc</span><span class="p">,</span> <span class="n">act</span><span class="p">)</span>
+        <span class="c1">#如果在close_list中或者不可达</span>
+        <span class="k">if</span> <span class="p">(</span><span class="ow">not</span> <span class="n">is_not_contains</span><span class="p">(</span><span class="n">next_loc</span><span class="p">,</span> <span class="n">close_list</span><span class="p">)</span> <span class="ow">or</span> <span class="n">next_loc</span> <span class="o">==</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)):</span>
+            <span class="k">continue</span>
+        
+        <span class="k">if</span> <span class="p">(</span><span class="n">is_not_contains</span><span class="p">(</span><span class="n">next_loc</span><span class="p">,</span> <span class="n">open_list</span><span class="p">)):</span>
+            <span class="c1">#如果不在open_list中</span>
+            <span class="c1">##print(&#39;next_loc:&#39;, next_loc)</span>
+            <span class="n">next_node</span> <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="n">next_loc</span><span class="p">,</span> <span class="n">cur_node</span><span class="p">)</span>
+            <span class="n">open_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">next_node</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="c1">#如果在open_list中，则重新计算cost</span>
+            <span class="n">new_cost</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">+</span> <span class="n">cur_node</span><span class="o">.</span><span class="n">get_cost</span><span class="p">()</span>
+            <span class="n">next_node</span> <span class="o">=</span> <span class="p">[</span><span class="n">nd</span> <span class="k">for</span> <span class="n">nd</span> <span class="ow">in</span> <span class="n">open_list</span> <span class="k">if</span> <span class="n">nd</span><span class="o">.</span><span class="n">loc</span> <span class="o">==</span> <span class="n">next_loc</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">new_cost</span> <span class="o">&lt;</span> <span class="n">next_node</span><span class="o">.</span><span class="n">cost</span><span class="p">):</span>
+                <span class="n">next_node</span><span class="o">.</span><span class="n">change_parent</span><span class="p">(</span><span class="n">cur_node</span><span class="p">)</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">next_node</span><span class="o">.</span><span class="n">loc</span> <span class="o">==</span> <span class="n">robot_dest_loc</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">next_node</span>
+    <span class="k">return</span> <span class="kc">None</span>
+
+<span class="k">def</span> <span class="nf">astar_method</span><span class="p">():</span>
+    <span class="n">start_node</span> <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="n">robot_current_loc</span><span class="p">)</span>
+    <span class="n">opend_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">start_node</span><span class="p">]</span>
+    <span class="n">close_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">while</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">opend_list</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">):</span>
+        <span class="c1">#按照最终代价升序排序</span>
+        <span class="n">opend_list</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">opend_list</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">by_final</span><span class="p">)</span>
+        <span class="c1">#取最终代价最小的</span>
+        <span class="n">node</span> <span class="o">=</span> <span class="n">opend_list</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">close_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">node</span><span class="p">)</span>
+        <span class="n">found_node</span> <span class="o">=</span> <span class="n">getOpendNodes</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="n">opend_list</span><span class="p">,</span> <span class="n">close_list</span><span class="p">)</span>
+        <span class="c1">##print(&#39;is_found:&#39;, is_found, &#39;opend_list:&#39;, opend_list)</span>
+        <span class="k">if</span> <span class="n">found_node</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;found node:&quot;</span><span class="p">,</span> <span class="n">found_node</span><span class="o">.</span><span class="n">loc</span><span class="p">)</span>
+            <span class="n">cur_node</span> <span class="o">=</span> <span class="n">found_node</span>
+            <span class="k">while</span> <span class="p">(</span><span class="n">cur_node</span><span class="p">):</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;path loc:&quot;</span><span class="p">,</span> <span class="n">cur_node</span><span class="o">.</span><span class="n">loc</span><span class="p">)</span>
+                <span class="n">cur_node</span> <span class="o">=</span> <span class="n">cur_node</span><span class="o">.</span><span class="n">parent</span>
+            <span class="k">break</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">opend_list</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;not found path to dest loc&quot;</span><span class="p">)</span>
+<span class="n">astar_method</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -13875,7 +14015,24 @@ OK
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>conns: {0: [0, 8], 1: [0, 1, 7, 8], 2: [1, 2, 6, 7], 3: [2, 3, 5, 6], 4: [3, 4, 5]}
+<pre>found node: (0, 0)
+path loc: (0, 0)
+path loc: (1, 0)
+path loc: (1, 1)
+path loc: (2, 1)
+path loc: (2, 2)
+path loc: (3, 2)
+path loc: (3, 3)
+path loc: (4, 3)
+path loc: (4, 4)
+path loc: (4, 5)
+path loc: (3, 5)
+path loc: (3, 6)
+path loc: (2, 6)
+path loc: (2, 7)
+path loc: (1, 7)
+path loc: (1, 8)
+path loc: (0, 8)
 </pre>
 </div>
 </div>
